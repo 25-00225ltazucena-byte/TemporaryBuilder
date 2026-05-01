@@ -11,14 +11,17 @@ permalink: /biography/
     <!-- LEFT SIDE -->
     <div class="col-md-4">
 
-      <img src="/assets/img/juanluna.jpg"
+      <img src="{{ '/assets/img/juanluna.jpg' | relative_url }}">
            class="img-fluid mb-3 bio-photo"
-           alt="Biography photo">
+           alt="Photo of Juan Luna">
 
       <div class="bio-side-text">
         <p><strong>Quick Info:</strong></p>
         <p>
           Add short details here (birthplace, role, key facts, etc.).
+
+          Born on October 25, 1857
+          (1857-1899)
         </p>
       </div>
 
@@ -34,7 +37,7 @@ permalink: /biography/
       </p>
 
       <p>
-        Add more paragraphs like a museum wall label.
+        Add more paragraphs
       </p>
 
     </div>
