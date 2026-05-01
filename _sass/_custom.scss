@@ -163,3 +163,14 @@
 .museum-content {
   padding: 20px;
 }
+
+Add:
+
+@media (max-width: 768px) {
+  .museum-sidebar {
+    position: relative;
+    height: auto;
+    border-right: none;
+    border-bottom: 1px solid #ddd;
+  }
+}
