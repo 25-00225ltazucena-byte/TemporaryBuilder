@@ -40,6 +40,7 @@
 
 /* =========================
    MUSEUM NAVBAR LAYOUT
+   (wide spacing desktop + clean mobile)
    ========================= */
 
 .navbar .container {
@@ -48,6 +49,7 @@
   align-items: center;
 }
 
+/* spread nav items across full width */
 .navbar-nav {
   flex: 1;
   display: flex;
@@ -55,6 +57,7 @@
   align-items: center;
 }
 
+/* nav button look */
 .navbar-nav .nav-link {
   padding: 8px 18px;
   border-radius: 8px;
@@ -65,10 +68,12 @@
   text-align: center;
 }
 
+/* hover effect */
 .navbar-nav .nav-link:hover {
   background-color: rgba(255, 255, 255, 0.12);
 }
 
+/* mobile fallback */
 @media (max-width: 992px) {
   .navbar-nav {
     justify-content: flex-start;
@@ -78,7 +83,7 @@
 }
 
 /* =========================
-   SEARCH BAR STYLE
+   SEARCH BAR (SCOPED STYLE)
    ========================= */
 
 .navbar .form-control {
@@ -88,6 +93,7 @@
   font-size: 0.9rem;
 }
 
+/* only affect search buttons, not all navbar buttons */
 .navbar form .btn,
 .navbar .input-group .btn {
   border-radius: 20px;
@@ -122,52 +128,4 @@
 
 .bio-side-text p {
   margin-bottom: 0.5rem;
-}
-
-/* =========================
-   SIDEBAR LAYOUT
-   ========================= */
-
-.museum-sidebar {
-  position: sticky;
-  top: 0;
-  height: 100vh;
-  padding: 25px;
-  border-right: 1px solid #e5e5e5;
-  background: white;
-}
-
-.bio-photo {
-  border-radius: 8px;
-  border: 1px solid #ddd;
-}
-
-.sidebar-nav a {
-  display: block;
-  margin: 10px 0;
-  text-decoration: none;
-  color: #333;
-  padding: 6px 10px;
-  border-radius: 6px;
-}
-
-.sidebar-nav a:hover {
-  background: rgba(0,0,0,0.05);
-}
-
-.museum-content {
-  padding: 20px;
-}
-
-/* =========================
-   MOBILE FIX
-   ========================= */
-
-@media (max-width: 768px) {
-  .museum-sidebar {
-    position: relative;
-    height: auto;
-    border-right: none;
-    border-bottom: 1px solid #ddd;
-  }
 }
