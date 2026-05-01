@@ -129,3 +129,57 @@
 .bio-side-text p {
   margin-bottom: 0.5rem;
 }
+
+/* =========================
+   NEW MUSEUM SIDEBAR (TRANSLUCENT)
+   ========================= */
+
+.museum-sidebar {
+  position: sticky;
+  top: 0;
+  height: 100vh;
+  padding: 20px;
+  background: rgba(0, 0, 0, 0.5);
+  backdrop-filter: blur(12px);
+  -webkit-backdrop-filter: blur(12px);
+  color: white;
+}
+
+.sidebar-inner {
+  display: flex;
+  flex-direction: column;
+  gap: 15px;
+}
+
+.bio-photo {
+  border-radius: 10px;
+  border: 1px solid rgba(255,255,255,0.2);
+}
+
+.bio-side-text {
+  font-size: 0.9rem;
+  color: rgba(255,255,255,0.85);
+}
+
+.sidebar-nav a {
+  display: block;
+  padding: 10px;
+  margin-bottom: 6px;
+  border-radius: 8px;
+  text-decoration: none;
+  color: white;
+  background: rgba(255,255,255,0.08);
+  transition: 0.2s;
+}
+
+.sidebar-nav a:hover {
+  background: rgba(255,255,255,0.18);
+}
+
+/* mobile fix */
+@media (max-width: 768px) {
+  .museum-sidebar {
+    position: relative;
+    height: auto;
+  }
+}
