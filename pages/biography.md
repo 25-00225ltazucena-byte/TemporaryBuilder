@@ -4,10 +4,6 @@ layout: page
 permalink: /biography/
 ---
 
-## Biography
-
-Write your content here.
-
 <div class="container py-4">
 
   <div class="row">
@@ -15,7 +11,7 @@ Write your content here.
     <!-- LEFT SIDE -->
     <div class="col-md-4">
 
-      <img src="/assets/img/your-photo.jpg"
+      <img src="/assets/img/juanluna.jpg"
            class="img-fluid mb-3 bio-photo"
            alt="Biography photo">
 
