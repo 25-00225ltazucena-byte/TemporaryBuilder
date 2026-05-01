@@ -40,7 +40,6 @@
 
 /* =========================
    MUSEUM NAVBAR LAYOUT
-   (wide spacing desktop + clean mobile)
    ========================= */
 
 .navbar .container {
@@ -49,7 +48,6 @@
   align-items: center;
 }
 
-/* spread nav items across full width */
 .navbar-nav {
   flex: 1;
   display: flex;
@@ -57,7 +55,6 @@
   align-items: center;
 }
 
-/* nav button look */
 .navbar-nav .nav-link {
   padding: 8px 18px;
   border-radius: 8px;
@@ -68,12 +65,10 @@
   text-align: center;
 }
 
-/* hover effect */
 .navbar-nav .nav-link:hover {
   background-color: rgba(255, 255, 255, 0.12);
 }
 
-/* mobile fallback */
 @media (max-width: 992px) {
   .navbar-nav {
     justify-content: flex-start;
@@ -83,7 +78,7 @@
 }
 
 /* =========================
-   SEARCH BAR (SCOPED STYLE)
+   SEARCH BAR STYLE
    ========================= */
 
 .navbar .form-control {
@@ -93,7 +88,6 @@
   font-size: 0.9rem;
 }
 
-/* only affect search buttons, not all navbar buttons */
 .navbar form .btn,
 .navbar .input-group .btn {
   border-radius: 20px;
@@ -130,8 +124,9 @@
   margin-bottom: 0.5rem;
 }
 
-
-//slide barr//
+/* =========================
+   SIDEBAR LAYOUT
+   ========================= */
 
 .museum-sidebar {
   position: sticky;
@@ -164,7 +159,9 @@
   padding: 20px;
 }
 
-Add:
+/* =========================
+   MOBILE FIX
+   ========================= */
 
 @media (max-width: 768px) {
   .museum-sidebar {
