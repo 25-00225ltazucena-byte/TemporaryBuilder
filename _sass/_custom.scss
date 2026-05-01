@@ -129,3 +129,37 @@
 .bio-side-text p {
   margin-bottom: 0.5rem;
 }
+
+
+//slide barr//
+
+.museum-sidebar {
+  position: sticky;
+  top: 0;
+  height: 100vh;
+  padding: 25px;
+  border-right: 1px solid #e5e5e5;
+  background: white;
+}
+
+.bio-photo {
+  border-radius: 8px;
+  border: 1px solid #ddd;
+}
+
+.sidebar-nav a {
+  display: block;
+  margin: 10px 0;
+  text-decoration: none;
+  color: #333;
+  padding: 6px 10px;
+  border-radius: 6px;
+}
+
+.sidebar-nav a:hover {
+  background: rgba(0,0,0,0.05);
+}
+
+.museum-content {
+  padding: 20px;
+}
