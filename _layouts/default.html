@@ -3,48 +3,37 @@
   <head prefix="og: http://ogp.me/ns#">
     {% include head/head.html %}
   </head>
+
   <body class="d-flex flex-column h-100">
-    <div id="skip-to-content"><a href="#maincontent">Skip to main content</a></div>
+
+    <div id="skip-to-content">
+      <a href="#maincontent">Skip to main content</a>
+    </div>
+
+    <!-- TOP HEADER (KEEP OUTSIDE GRID) -->
+    {% include collection-banner.html %}
+    {% include collection-nav.html %}
+
+    <!-- PAGE LAYOUT -->
     <div class="container-fluid">
-    <div class="row">
+      <div class="row">
 
-    <!-- LEFT SIDEBAR -->
-    <aside class="col-md-3 museum-sidebar">
+        <!-- LEFT SIDEBAR -->
+        <aside class="col-md-3 museum-sidebar">
+          <!-- you will customize this later -->
+        </aside>
 
-      <img src="{{ '/assets/img/juanluna.jpg' | relative_url }}"
-           class="img-fluid mb-3 bio-photo"
-           alt="Photo">
+        <!-- MAIN CONTENT -->
+        <main id="maincontent" class="col-md-9 museum-content flex-shrink-0">
+          {{ content }}
+        </main>
 
-      <div class="bio-side-text mb-3">
-        <p><strong>Quick Info</strong></p>
-        <p>Artist / Painter<br>1857–1899</p>
       </div>
+    </div>
 
-      <nav class="sidebar-nav">
-        <a href="{{ '/' | relative_url }}">Home</a>
-        <a href="{{ '/gallery/' | relative_url }}">Gallery</a>
-        <a href="{{ '/data.html' | relative_url }}">Data</a>
-        <a href="{{ '/biography/' | relative_url }}">Biography</a>
-      </nav>
-
-    </aside>
-
-    <!-- RIGHT SIDE -->
-    <main class="col-md-9 museum-content">
-
-      {% include collection-banner.html %}
-      {% include collection-nav.html %}
-
-      <div id="maincontent" role="main">
-        {{ content }}
-      </div>
-
-    </main>
-
-  </div>
-</div>
     {% include footer.html %}
     {% include foot.html %}
     {% include scroll-to-top.html %}
+
   </body>
 </html>
