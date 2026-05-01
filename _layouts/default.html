@@ -6,34 +6,52 @@
 
   <body class="d-flex flex-column h-100">
 
-    <div id="skip-to-content">
-      <a href="#maincontent">Skip to main content</a>
-    </div>
+<div id="skip-to-content">
+  <a href="#maincontent">Skip to main content</a>
+</div>
 
-    <!-- TOP HEADER (KEEP OUTSIDE GRID) -->
-    {% include collection-banner.html %}
-    {% include collection-nav.html %}
+{% include collection-banner.html %}
+{% include collection-nav.html %}
 
-    <!-- PAGE LAYOUT -->
-    <div class="container-fluid">
-      <div class="row">
+<div class="container-fluid">
+  <div class="row">
 
-        <!-- LEFT SIDEBAR -->
-        <aside class="col-md-3 museum-sidebar">
-          <!-- you will customize this later -->
-        </aside>
+    <!-- SIDEBAR (NEW) -->
+    <aside class="col-md-3 museum-sidebar">
 
-        <!-- MAIN CONTENT -->
-        <main id="maincontent" class="col-md-9 museum-content flex-shrink-0">
-          {{ content }}
-        </main>
+      <div class="sidebar-inner">
+
+        <img src="{{ '/assets/img/juanluna.jpg' | relative_url }}"
+             class="img-fluid bio-photo"
+             alt="Profile photo">
+
+        <div class="bio-side-text">
+          <p><strong>Quick Info</strong></p>
+          <p>Artist / Painter<br>1857–1899</p>
+        </div>
+
+        <nav class="sidebar-nav">
+          <a href="{{ '/' | relative_url }}">Home</a>
+          <a href="{{ '/gallery/' | relative_url }}">Gallery</a>
+          <a href="{{ '/browse.html' | relative_url }}">Browse</a>
+          <a href="{{ '/biography/' | relative_url }}">Biography</a>
+        </nav>
 
       </div>
-    </div>
 
-    {% include footer.html %}
-    {% include foot.html %}
-    {% include scroll-to-top.html %}
+    </aside>
 
-  </body>
+    <!-- MAIN CONTENT -->
+    <main id="maincontent" class="col-md-9 museum-content">
+      {{ content }}
+    </main>
+
+  </div>
+</div>
+
+{% include footer.html %}
+{% include foot.html %}
+{% include scroll-to-top.html %}
+
+</body>
 </html>
