@@ -108,3 +108,24 @@
 .navbar .input-group .btn:hover {
   background-color: rgba(255,255,255,0.25);
 }
+
+/* =========================
+   BIOGRAPHY
+   ========================= */
+
+.bio-photo {
+  border: 2px solid #ddd;
+  border-radius: 6px;
+  box-shadow: 0 4px 12px rgba(0,0,0,0.12);
+}
+
+.bio-side-text {
+  font-size: 0.9rem;
+  color: #444;
+  line-height: 1.6;
+  padding: 8px 4px;
+}
+
+.bio-side-text p {
+  margin-bottom: 0.5rem;
+}
